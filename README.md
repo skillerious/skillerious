@@ -52,6 +52,6 @@ Feel free to reach out to me via [Email](mailto:robin.doak87@gmail.com) or check
 
 If you like my work, consider buying me a coffee! 
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%23FFDD00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](buymeacoffee.com/Skillerious)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%23FFDD00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/skillerious)
 
 *Coding is more than just a hobby for me; it's a lifelong journey of learning and creativity.* ✨
