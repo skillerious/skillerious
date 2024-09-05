@@ -13,18 +13,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Generate the snake animation
+      # Generate the snake animation using the latest version of the action
       - name: Generate Snake
-        uses: Platane/snk@v2
+        uses: Platane/snk@main
         with:
           github_user_name: "skillerious"  # Your GitHub username
-          outputs: dist/github-snake-dark.svg
+          outputs: dist/github-snake.svg
 
       # Commit the new SVG file to the repository
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add dist/github-snake-dark.svg
+          git add dist/github-snake.svg
           git commit -m "Generated snake animation"
           git push
