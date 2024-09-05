@@ -17,7 +17,7 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
-          github_user_name: skillerious
+          github_user_name: "skillerious"  # Your GitHub username
           outputs: dist/github-snake-dark.svg
 
       # Commit the new SVG file to the repository
