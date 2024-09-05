@@ -1,0 +1,31 @@
+name: Generate Snake Animation
+
+on:
+  schedule: # Runs at 6:00 every day
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Generate the snake animation
+      - name: Generate Snake
+        uses: Platane/snk@v2
+        with:
+          gif_out_path: dist/github-snake-dark.svg
+          grid_color: "#2f363d" # dark background grid color
+          color_snake: "#1abc9c" # snake color (for dark mode)
+      
+      # Commit the new SVG file to the repository
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Generated snake animation"
+          git push
